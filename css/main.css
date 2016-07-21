@@ -2,13 +2,10 @@
     box-sizing: border-box;
 }
 
-/*html {
-    background-color: lightblue;
-}*/
-
 .wrapper {
     width: 1200px;
     margin: 0 auto;
+    /*Temporary property*/
     border: 1px dashed yellow;
 }
 .header {
