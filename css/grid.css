@@ -1,0 +1,57 @@
+/** {
+    box-sizing: border-box;
+}*/
+.grid {
+    width: 960;
+    background-color: rgba(228, 227, 98, 0.1);
+}
+.grid:before, .grid:after {
+    content: " ";
+    display: table;
+}
+.grid:after {
+    clear: both;
+}
+
+/*Grid cell length definition*/
+
+.col-1 {
+    width: 6.33%;
+}
+.col-2 {
+    width: 14.66%;
+}
+.col-3 {
+    width: 23%;
+}
+.col-4 {
+    width: 31.33%;
+}
+.col-5 {
+    width: 39.66%;
+}
+.col-6 {
+    width: 48%;
+}
+.col-7 {
+    width: 56.33%;
+}
+.col-8 {
+    width: 64.66%;
+}
+.col-9 {
+    width: 73%;
+}
+.col-10 {
+    width: 81.33%;
+}
+.col-11 {
+    width: 89.66%;
+}
+.col-12 {
+    width: 98%;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    margin: 1%;
+    float: left;
+}
