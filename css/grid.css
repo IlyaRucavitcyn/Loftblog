@@ -2,8 +2,8 @@
     box-sizing: border-box;
 }*/
 .grid {
-    width: 960;
-    background-color: rgba(228, 227, 98, 0.1);
+    width: 960px;
+    margin:0 auto;
 }
 .grid:before, .grid:after {
     content: " ";
