@@ -1,28 +1,100 @@
 * {
     box-sizing: border-box;
 }
-html {
+
+/*html {
     background-color: lightblue;
-}
+}*/
+
 .wrapper {
     width: 1200px;
     margin: 0 auto;
-    border:1px dashed yellow;
+    border: 1px dashed yellow;
 }
-.header{
-  background-color:#8cc34b;
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+.header {
+    background-color: #8cc34b;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.header__icon {
+    width: 62px;
+    height: 62px;
+    margin: 15px 20px 10px 25px;
+    border-radius: 50%;
+    border: 2px white solid;
+    background: url('../img/Avatarka.jpg') center / cover no-repeat;
+    float: left;
+}
+.header__contacts {
+    float: left;
+    margin-top: 20px;
+    line-height: 1.5;
+    color: white;
+}
+.header__socials {
+    float: right;
+    margin-top: 30px;
+}
+.header__socials__list {
+    list-style: none;
+    font-size: 0;
+}
+.header__socials__list__icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}
+.header__socials__list__icon:first-child {
+    margin-left: 0;
+}
+.header__socials__list__icon:last-child {
+    margin-right: 25px;
+    width: 40px;
+}
+.header__socials__list__icon--github {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../img/git.svg') center no-repeat;
+}
+.header__socials__list__icon--github:hover{
+  background-image:url('../img/git_hovered.svg')
+}
+.header__socials__list__icon--skype:hover{
+  background-image:url('../img/sk_hovered.svg')
+}
+.header__socials__list__icon--vk:hover{
+  background-image:url('../img/vk_hovered.svg')
+}
+.header__socials__list__icon--skype {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../img/sk.svg') center no-repeat;
+}
+.header__socials__list__icon--vk {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../img/vk.svg') center no-repeat;
+}
+.clearfixed:before, .wrapper:after {
+    content: " ";
+    display: table;
+}
+.clearfixed:after {
+    clear: both;
 }
 .footer {
-  width:100%;
-  padding:12px 0;
-  text-align:center;
-  line-height:1.5;
-  position:fixed;
-  bottom:0;
-  color:#828282;
-  background-color: #212121;
-  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 12px 0;
+    text-align: center;
+    line-height: 1.5;
+    position: fixed;
+    bottom: 0;
+    color: #828282;
+    background-color: #212121;
+    box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
 /*Temporary styles for further deleting*/
@@ -33,6 +105,6 @@ html {
 .blue {
     background-color: blue;
 }
-.white{
-  background-color: white;
+.white {
+    background-color: white;
 }
