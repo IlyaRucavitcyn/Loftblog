@@ -7,10 +7,11 @@ html {
 .wrapper {
     width: 1200px;
     margin: 0 auto;
-    background-color: yellow;
+    border:1px dashed yellow;
 }
 .header{
-  
+  background-color:#8cc34b;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
 }
 .footer {
   width:100%;
@@ -31,4 +32,7 @@ html {
 }
 .blue {
     background-color: blue;
+}
+.white{
+  background-color: white;
 }
