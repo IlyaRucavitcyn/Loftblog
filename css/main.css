@@ -1,12 +1,48 @@
+/*Connecting external fonts*/
+
+@font-face {
+    font-family: 'FiraSans-Bold';
+    src: url('../fonts/FiraSans/FiraSans-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FiraSans-BoldItalic';
+    src: url('../fonts/FiraSans/FiraSans-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FiraSans-Italic';
+    src: url('../fonts/FiraSans/FiraSans-Italic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FiraSans-Light';
+    src: url('../fonts/FiraSans/FiraSans-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FiraSans-LightItalic';
+    src: url('../fonts/FiraSans/FiraSans-LightItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FiraSans-Medium';
+    src: url('../fonts/FiraSans/FiraSans-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FiraSans-MediumItalic';
+    src: url('../fonts/FiraSans/FiraSans-MediumItalic.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FiraSans-Regular';
+    src: url('../fonts/FiraSans/FiraSans-Regular.ttf') format('truetype');
+}
 * {
     box-sizing: border-box;
 }
-
+html {
+    font-family: "FiraSans-Regular", "Arial", sans-serif;
+}
 .wrapper {
     width: 1200px;
     margin: 0 auto;
     /*Temporary property*/
-    border: 1px dashed yellow;
+    border: 1px dashed rgba(52, 105, 69, 0.71);
 }
 .header {
     background-color: #8cc34b;
@@ -54,14 +90,14 @@
     height: 100%;
     background: url('../img/git.svg') center no-repeat;
 }
-.header__socials__list__icon--github:hover{
-  background-image:url('../img/git_hovered.svg')
+.header__socials__list__icon--github:hover {
+    background-image: url('../img/git_hovered.svg')
 }
-.header__socials__list__icon--skype:hover{
-  background-image:url('../img/sk_hovered.svg')
+.header__socials__list__icon--skype:hover {
+    background-image: url('../img/sk_hovered.svg')
 }
-.header__socials__list__icon--vk:hover{
-  background-image:url('../img/vk_hovered.svg')
+.header__socials__list__icon--vk:hover {
+    background-image: url('../img/vk_hovered.svg')
 }
 .header__socials__list__icon--skype {
     display: block;
@@ -81,6 +117,53 @@
 }
 .clearfixed:after {
     clear: both;
+}
+
+/*Courses component styling*/
+
+
+/*TODO Delete all temporary styles*/
+
+
+/*TODO Add fontawesome clock from http://fontawesome.io/icon/clock-o/*/
+
+
+/*TODO difine the min-height of the section so the background covers all the place to the footer when all courses articles disappear*/
+
+.section__courses {
+    padding-bottom: 100px;
+    background: url('../img/gplaypattern.png') repeat;
+}
+.section__courses__article {
+    border-radius: 1px;
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    /*Temporary properties*/
+    /*height: 300px;*/
+}
+.section__courses__article:hover .section__courses__article__main {
+    color: #8cc34b;
+    border-color: #8cc34b;
+}
+.section__courses_article .section__courses__article__footer .checker:checked {}
+.section__courses__article__header {
+    height: 165px;
+}
+.section__courses__article--js__header {
+    background: url('../img/javascriptCourse.png');
+}
+.section__courses__article__main {
+    border-top: 5px solid transparent;
+    /*Temporary properties*/
+    /*height: 50px;
+    background-color: rgb(220, 126, 153);*/
+}
+.section__courses__article__footer {
+    padding: 10px 0;
+    background-color: #f6f7f2;
+    /*Temporary properties*/
+    /*height: 50px;
+    background-color: rgba(221, 16, 13, 0.54);*/
 }
 .footer {
     width: 100%;
@@ -104,4 +187,7 @@
 }
 .white {
     background-color: white;
+}
+.pink {
+    background-color: pink;
 }
