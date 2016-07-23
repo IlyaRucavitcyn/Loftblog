@@ -219,6 +219,36 @@ h3 {
     background-color: #f6f7f2;
     /*Temporary properties*/
 }
+.section__courses__article__footer--checker{
+  display:none;
+}
+.section__courses__article__footer--checker:not(checked)+label::before{
+  margin: 0 15px 0 20px;
+  display:block;
+  width:15px;
+  height:15px;
+  float:left;
+  /*font-size: 1.3em;*/
+  /*font-family: "FontAwesome";*/
+  content:'';
+  color:#f6f7f2;
+  border: 3px grey solid;
+  border-radius:2px;
+}
+.section__courses__article__footer--checker:checked+label::before{
+  margin: 0 20px;
+  display:block;
+  width:15px;
+  height:15px;
+  float:left;
+  /*font-size: 1.3em;*/
+  font-family: "FontAwesome";
+  content:'\f00c';
+  color:white;
+  background-color:#8cc34b;
+  border-color: #8cc34b;
+  font-size: 0.9em;
+}
 .duration {
     color: #727272;
 }
