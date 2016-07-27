@@ -13,7 +13,7 @@ $('.section__courses__article__footer--checker').change(function(e) {
     counter++;
     var target = e.target.parentElement.parentElement;
     setTimeout(function() {
-        addClassIE(target, "invisible");
+        addClassIE(target.parentElement, "invisible");
         if (counter === articleCollection.length) {
             $('.section__courses--completed').removeClass("invisible");
         }
