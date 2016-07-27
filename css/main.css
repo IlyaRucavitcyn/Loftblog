@@ -72,10 +72,14 @@
 html {
     font-family: "FiraSans-Regular", "Arial", sans-serif;
     font-size: 14px;
-    background: url('../img/gplaypattern.png') repeat;
+    height: 100%;
 }
 body {
     min-width: 960px;
+    min-height: 100%;
+    padding-bottom: 66px;
+    background: url('../img/gplaypattern.png') repeat;
+    position: relative;
 }
 h1 {
     font-family: "FiraSans-Medium", "Arial", sans-serif;
@@ -283,7 +287,8 @@ h3 {
     padding: 12px 0;
     text-align: center;
     line-height: 1.5;
-    position: fixed;
+    position: absolute;
+    left: 0;
     bottom: 0;
     color: #828282;
     background-color: #212121;
