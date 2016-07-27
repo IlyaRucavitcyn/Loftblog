@@ -73,6 +73,9 @@ html {
     font-family: "FiraSans-Regular", "Arial", sans-serif;
     font-size: 14px;
 }
+body {
+    min-width: 1200px;
+}
 h1 {
     font-family: "FiraSans-Medium", "Arial", sans-serif;
     font-size: 42px;
@@ -91,8 +94,6 @@ h3 {
 .wrapper {
     width: 1200px;
     margin: 0 auto;
-    /*Temporary property*/
-    /*border: 1px dashed rgba(52, 105, 69, 0.71);*/
 }
 .header {
     background-color: #8cc34b;
@@ -171,28 +172,35 @@ h3 {
 
 /*Courses component styling*/
 
-
-/*TODO Delete all temporary styles*/
-
-
-/*TODO Add fontawesome clock from http://fontawesome.io/icon/clock-o/*/
-
-
-/*TODO difine the min-height of the section so the background covers all the place to the footer when all courses articles disappear*/
-
 .section__info {
     padding-top: 55px;
 }
 .section__courses {
     padding: 60px 0 100px 0;
     background: url('../img/gplaypattern.png') repeat;
+    position: relative;
+}
+.section__courses--completed {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #8cc34b;
+    top: 0;
+    left: 0;
+}
+.section__courses--completed__text {
+    margin-top: 590px;
+}
+.section__courses--completed__text:before {
+    font-family: "FontAwesome";
+    font-size: 0.9em;
+    content: '\f00c';
+    color: #8cc34b;
 }
 .section__courses__article {
     border-radius: 1px;
     box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.2);
     background-color: #ffffff;
-    /*Temporary properties*/
-    /*height: 300px;*/
 }
 .section__courses__article:hover .section__courses__article__main {
     color: #8cc34b;
@@ -205,49 +213,61 @@ h3 {
 .section__courses__article--js__header {
     background: url('../img/javascriptCourse.png');
 }
+.section__courses__article--jquery__header {
+    background: url('../img/jqueryCourse.png');
+}
+.section__courses__article--base__header {
+    background: url('../img/baseEl.png');
+}
+.section__courses__article--adoptive__header {
+    background: url('../img/adoptiveWeb.png');
+}
+.section__courses__article--adoptive-css__header {
+    background: url('../img/buttonGen.png');
+}
+.section__courses__article--css-gallery__header {
+    background: url('../img/cssGallery.png');
+}
 .section__courses__article__main {
     border-top: 5px solid transparent;
     padding: 20px 20px 0px 20px;
-    /*Temporary properties*/
 }
 .section__courses__article__main p {
     color: black;
 }
 .section__courses__article__footer {
     padding: 20px 0;
-    color:gray;
+    color: gray;
     background-color: #f6f7f2;
-    /*Temporary properties*/
+    line-height: 1.3;
 }
-.section__courses__article__footer--checker{
-  display:none;
+.section__courses__article__footer--checker {
+    display: none;
 }
-.section__courses__article__footer--checker:not(checked)+label::before{
-  margin: 0 15px 0 20px;
-  display:block;
-  width:15px;
-  height:15px;
-  float:left;
-  /*font-size: 1.3em;*/
-  /*font-family: "FontAwesome";*/
-  content:'';
-  color:#f6f7f2;
-  border: 3px grey solid;
-  border-radius:2px;
+.section__courses__article__footer--checker:not(checked)+label::before {
+    margin: 0 15px 0 20px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    content: '';
+    color: #f6f7f2;
+    border: 3px grey solid;
+    border-radius: 2px;
 }
-.section__courses__article__footer--checker:checked+label::before{
-  margin: 0 20px;
-  display:block;
-  width:15px;
-  height:15px;
-  float:left;
-  /*font-size: 1.3em;*/
-  font-family: "FontAwesome";
-  content:'\f00c';
-  color:white;
-  background-color:#8cc34b;
-  border-color: #8cc34b;
-  font-size: 0.9em;
+.section__courses__article__footer--checker:checked+label::before {
+    margin: 0 15px 0 20px;
+    display: block;
+    width: 15px;
+    height: 15px;
+    float: left;
+    font-family: "FontAwesome";
+    content: '\f00c';
+    color: white;
+    background-color: #8cc34b;
+    border-color: #8cc34b;
+    font-size: 0.9em;
+    line-height: 1;
 }
 .duration {
     color: #727272;
@@ -269,17 +289,37 @@ h3 {
     box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.2);
 }
 
-/*Temporary styles for further deleting*/
+/*Making overlay mask after checking the checkbox*/
 
-.red {
-    background-color: red
+.overlay {
+    position: relative;
+    transition: background-color 400ms linear;
 }
-.blue {
-    background-color: blue;
-}
-.white {
+.overlay:before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.3;
     background-color: white;
+    transition: background-color 400ms linear;
 }
-.pink {
-    background-color: pink;
+.overlay:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+    background-color: #8cc34b;
+    transition: background-color 400ms linear;
+}
+
+/*Hiding course card class*/
+
+.invisible {
+    display: none;
 }

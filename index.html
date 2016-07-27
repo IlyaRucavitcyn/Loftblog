@@ -11,6 +11,9 @@
 </head>
 
 <body>
+
+    <!-- @@@ HEADER with personal Info -->
+
     <header class="header">
         <div class="wrapper clearfixed">
             <div class="header__icon"></div>
@@ -33,7 +36,13 @@
             </div>
         </div>
     </header>
+
+    <!-- @@@ Main section -->
+
     <main>
+
+        <!-- @@@ Section with the info -->
+
         <section class="section__info">
             <div class="wrapper">
                 <h1 class="text-centered">О будущем ученике</h1>
@@ -67,11 +76,22 @@
                 </div>
             </div>
         </section>
+
+        <!-- @@@ Section with the courses -->
+
         <section class="section__courses">
             <div class="wrapper">
+                <div class="section__courses--completed font-size-42 font-medium invisible">
+                    <div class="section__courses--completed__text text-centered">
+                        Задание выполнено
+                    </div>
+                </div>
                 <h1 class="text-centered">Курсы на loftblog</h1>
                 <h3 class="text-centered">которые мне помогут в выполнении этого задания</h3>
                 <div class="grid">
+
+                    <!-- @@@ Javascript course -->
+
                     <div class="col-4">
                         <article class="section__courses__article section__courses__article--js">
                             <div class="section__courses__article__header section__courses__article--js__header">
@@ -90,95 +110,110 @@
                             </div>
                         </article>
                     </div>
+
+                    <!-- @@@ Jquery course -->
+
                     <div class="col-4">
-                        <article class="section__courses__article section__courses__article--js">
-                            <div class="section__courses__article__header section__courses__article--js__header">
+                        <article class="section__courses__article section__courses__article--jquery">
+                            <div class="section__courses__article__header section__courses__article--jquery__header">
 
                             </div>
                             <div class="section__courses__article__main">
-                                <h2>Основы JavaScript</h2>
+                                <h2>Основы JQUERY</h2>
                                 <p class="font-light line-height-15">
                                     Видеокурс об одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.
                                 </p>
-                                <span class="duration line-height-30">24 урока (6 часов 46 минут)</span>
+                                <span class="duration line-height-30">11 уроков (2 часа 6 минут)</span>
                             </div>
                             <div class="section__courses__article__footer font-size-18">
-                                <input id="jsCourse" class="checker" type="checkbox" name="name" value="">
-                                <label for="jsCourse">Посмотрел</label>
+                                <input id="jqueryCourse" class="section__courses__article__footer--checker" type="checkbox" name="name" value="">
+                                <label for="jqueryCourse">Посмотрел</label>
                             </div>
                         </article>
                     </div>
+
+                    <!-- @@@ Base element course -->
+
                     <div class="col-4">
-                        <article class="section__courses__article section__courses__article--js">
-                            <div class="section__courses__article__header section__courses__article--js__header">
+                        <article class="section__courses__article section__courses__article--base">
+                            <div class="section__courses__article__header section__courses__article--base__header">
 
                             </div>
                             <div class="section__courses__article__main">
-                                <h2>Основы JavaScript</h2>
+                                <h2>Базовые элементы страницы</h2>
                                 <p class="font-light line-height-15">
-                                    Видеокурс об одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.
+                                    Видеокурс по верстке и программированию основных и популярных элементов сайтов. Посмотрев этот курс вы научитесь создавать табы, аккордеон, слайдшоу, слайдер и т.д.
                                 </p>
-                                <span class="duration line-height-30">24 урока (6 часов 46 минут)</span>
+                                <span class="duration line-height-30">9 уроков (2 часа 7 минут)</span>
                             </div>
                             <div class="section__courses__article__footer font-size-18">
-                                <input id="jsCourse" class="checker" type="checkbox" name="name" value="">
-                                <label for="jsCourse">Посмотрел</label>
+                                <input id="baseEl" class="section__courses__article__footer--checker" type="checkbox" name="name" value="">
+                                <label for="baseEl">Посмотрел</label>
                             </div>
                         </article>
                     </div>
                 </div>
                 <div class="grid">
+
+                    <!-- @@@ Adoptive Web design course -->
+
                     <div class="col-4">
-                        <article class="section__courses__article section__courses__article--js">
-                            <div class="section__courses__article__header section__courses__article--js__header">
+                        <article class="section__courses__article section__courses__article--adoptive">
+                            <div class="section__courses__article__header section__courses__article--adoptive__header">
 
                             </div>
                             <div class="section__courses__article__main">
-                                <h2>Основы JavaScript</h2>
+                                <h2>Создание адаптивных сайтов</h2>
                                 <p class="font-light line-height-15">
-                                    Видеокурс об одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.
+                                    В этом курсе вы узнаете как создавать адаптивные сайты, что такое адаптивная верстка и дизайн.
                                 </p>
-                                <span class="duration line-height-30">24 урока (6 часов 46 минут)</span>
+                                <span class="duration line-height-30">7 уроков (2 часов 11 минут)</span>
                             </div>
                             <div class="section__courses__article__footer font-size-18">
-                                <input id="jsCourse" class="checker" type="checkbox" name="name" value="">
-                                <label for="jsCourse">Посмотрел</label>
+                                <input id="adoptive" class="section__courses__article__footer--checker" type="checkbox" name="name" value="">
+                                <label for="adoptive">Посмотрел</label>
                             </div>
                         </article>
                     </div>
+
+                    <!-- @@@ Adoptive CSS gallery course -->
+
                     <div class="col-4">
-                        <article class="section__courses__article section__courses__article--js">
-                            <div class="section__courses__article__header section__courses__article--js__header">
+                        <article class="section__courses__article section__courses__article--adoptive-css">
+                            <div class="section__courses__article__header section__courses__article--adoptive-css__header">
 
                             </div>
                             <div class="section__courses__article__main">
-                                <h2>Основы JavaScript</h2>
+                                <h2>Верстка адаптивной CSS галереи</h2>
                                 <p class="font-light line-height-15">
-                                    Видеокурс об одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.
+                                    В этом видеокурсе вы изучите инструменты, техники и подходы для web-разработчика, которые помогут вам решать поставленные задачи более быстро и эффективно.
                                 </p>
-                                <span class="duration line-height-30">24 урока (6 часов 46 минут)</span>
+                                <span class="duration line-height-30">6 уроков (1 час 9 минут)</span>
                             </div>
                             <div class="section__courses__article__footer font-size-18">
-                                <input id="jsCourse" class="checker" type="checkbox" name="name" value="">
-                                <label for="jsCourse">Посмотрел</label>
+                                <input id="adoptive-css" class="section__courses__article__footer--checker" type="checkbox" name="name" value="">
+                                <label for="adoptive-css">Посмотрел</label>
                             </div>
                         </article>
                     </div>
+
+                    <!-- @@@ CSS gallery course -->
+
                     <div class="col-4">
-                        <article class="section__courses__article section__courses__article--js">
-                            <div class="section__courses__article__header section__courses__article--js__header">
+                        <article class="section__courses__article section__courses__article--css-gallery">
+                            <div class="section__courses__article__header section__courses__article--css-gallery__header">
 
                             </div>
                             <div class="section__courses__article__main">
-                                <h2>Основы JavaScript</h2>
+                                <h2>Верстка адаптивной CSS галереи</h2>
                                 <p class="font-light line-height-15">
-                                    Видеокурс об одном из самых популярных языков программирования - JavaScript. Изучая этот курс вы познаете этот прекрасный язык от самых основ.
+                                    В этом курсе мы разберем как сверстать адаптивную css галерею. Также познакомимся с Flexbox.
                                 </p>
-                                <span class="duration line-height-30">24 урока (6 часов 46 минут)</span>
+                                <span class="duration line-height-30">4 урока (50 минут)</span>
                             </div>
                             <div class="section__courses__article__footer font-size-18">
-                                <input id="jsCourse" class="checker" type="checkbox" name="name" value="">
-                                <label for="jsCourse">Посмотрел</label>
+                                <input id="css-gallery" class="section__courses__article__footer--checker" type="checkbox" name="name" value="">
+                                <label for="css-gallery">Посмотрел</label>
                             </div>
                         </article>
                     </div>
@@ -186,10 +221,16 @@
             </div>
         </section>
     </main>
+
+    <!-- @@@ Footer begining -->
+
     <footer class="footer">
         А это футер, с текстом внутри. Он должен быть прибит к низу окна браузера,
         <br> независимо от количества контента на странице и размера окна.
     </footer>
+
+    <script src="./js/jquery-3.1.0.min.js"></script>
+    <script src='./js/main.js'></script>
 </body>
 
 </html>
